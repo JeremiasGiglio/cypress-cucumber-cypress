@@ -1,4 +1,4 @@
 {
-  "baseUrl": "https://kylbutlr-calculator.herokuapp.com/",
+  "baseUrl": "http://isay.com.ar/app",
   "testFiles": "**/*.feature"
 }
