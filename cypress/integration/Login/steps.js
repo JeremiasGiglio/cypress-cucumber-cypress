@@ -4,7 +4,7 @@ import * as user from './actions';
 Given (/^que me encuentro en la pagina de ingreso$/,() => {
   user.enterLoginPage();
 });
-And (/^cuento con una cuenta (.*)$/,(accountType) => {
+And (/^cuento con una (.*)$/,(accountType) => {
   user.chooseAccountType(accountType);
 });
 When (/^ingreso mi usuario y contraseña$/,() => {
@@ -13,7 +13,7 @@ When (/^ingreso mi usuario y contraseña$/,() => {
 And (/^Presiono en ingresar$/,() => {
   user.pressLogin();
 });
-Then (/^deberia ser (.*)$/,(loginResult) => {
+Then (/^deberia (.*)$/,(loginResult) => {
   user.checkLogin(loginResult)
 });
 

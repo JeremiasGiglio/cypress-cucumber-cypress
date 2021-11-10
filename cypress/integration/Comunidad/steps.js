@@ -4,7 +4,7 @@ import * as user from './actions';
 Given (/^que estoy ingresado como usuario premium$/,() => {
   user.premiumLogin();
 });
-When(/^ingreso a mi communidad (.*)$/,(comunityName) =>{
+When(/^ingreso a la comunidad (.*)$/,(comunityName) =>{
  user.enterComunidad(comunityName)
 });
 And(/^ingreso en el sector (.*)$/,(comunitysector) =>{

@@ -10,7 +10,7 @@ function premiumLogin(){
 }
 
 function enterComunidad(comunityName){
- // cy.xpath("//span[contains(text(),'"+comunityName+"') and contains(@class, 'ng-binding')]").as("Comunidad").should("be.visible");
+  cy.xpath("//span[contains(text(),'"+comunityName+"') and contains(@class, 'ng-binding')]").as("Comunidad").should("be.visible");
   cy.get("@Comunidad").click();
 }
 

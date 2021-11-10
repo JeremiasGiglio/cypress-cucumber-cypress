@@ -6,12 +6,14 @@ function enterLoginPage(){
 
 function chooseAccountType(accountType){
     if(accountType == "premium"){
+        
         const user = "isaytest21@gmail.com";
         const password = "Testing05"
+
+        
         Cypress.env("user", user)
         Cypress.env("password", password)
-        console.log(Cypress.env("user"))
-        console.log(Cypress.env("password"))
+        
       
       }
       else{
